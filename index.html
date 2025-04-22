@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos creativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Banner de Prueba -->
+    <div class="test-banner">
+        Este es un sitio de prueba para demostración. No se procesarán pedidos reales ni se realizarán cargos. Cualquier compra realizada aquí no será válida.
+    </div>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="container">
+            <div class="brand">Imagine & create </div>
+            <div class="nav-links">
+                <button id="nav-home" class="btn btn-ghost active"><span class="icon">🏠</span> Inicio</button>
+                <button id="nav-team" class="btn btn-ghost"><span class="icon">👥</span> Equipo</button>
+                <button id="nav-about" class="btn btn-ghost"><span class="icon">ℹ️</span> Quiénes somos</button>
+                <button id="nav-catalog" class="btn btn-ghost"><span class="icon">🛒</span> Catalogo</button>
+                <button id="nav-payment" class="btn btn-ghost"><span class="icon">💳</span> Payment</button>
+                <button id="nav-contact" class="btn btn-ghost"><span class="icon">💬</span> Contacto</button>
+                <button id="nav-terms" class="btn btn-ghost"><span class="icon">📄</span> Terminos y Condiciones</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Página Home -->
+        <div id="page-home" class="page active space-y-8">
+            <section class="text-center py-12">
+                <h1 class="text-4xl font-bold mb-4">Bienvenidos a IMAGINE & CREATE</h1>
+                <p class="text-xl text-gray-600 mb-8">Transformamos ideas en momentos inolvidables.</p>
+                <img src="img/imagenPrincipal.png" alt="Imagen principal del negocio" class="img-fluid mt-3">
+            </section>
+
+            <section class="grid md:grid-cols-3 gap-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Servicios de Calidad</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Creamos experiencias únicas con atención impecable y detalles extraordinarios.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Servicio excepcional</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Nuestro equipo se dedica a brindar experiencias excepcionales a los clientes.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Prácticas Sostenibles</h2>
+                    </div>
+                    <div class="card-content">
+                        <p>Estamos comprometidos con las operaciones comerciales responsables con el medio ambiente.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Página Team -->
+        <div id="page-team" class="page">
+            <h1 class="text-3xl font-bold mb-8 text-center">Nuestro Equipo</h1>
+            <div class="grid md:grid-cols-3 gap-6" id="team-container">
+                <!-- El contenido del equipo se generará dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Página About Us -->
+        <div id="page-about" class="page space-y-8">
+            <h1 class="text-3xl font-bold mb-8 text-center">Acerca de Nosotros</h1>
+            
+            <section>
+                <h2 class="text-2xl font-semibold mb-4">Nuestra historia</h2>
+                <p class="mb-6">Nuestro viaje comenzó en 2015, cuando un pequeño grupo de apasionados en diseño y planificación decidió transformar sus talentos en una empresa dedicada a celebrar la vida a través de eventos personalizados. Lo que comenzó como una idea local ha crecido hasta convertirse en una marca reconocida en todo El Salvador</p>
+                <img src="img/eventos.png" alt="Imagen " class="img-fluid mt-3">
+            </section>
+
+            <section class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Mision</h2>
+                    <p>Transformar momentos especiales en experiencias memorables a través de planificación creativa, servicios personalizados y un compromiso inquebrantable con la excelencia.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-4">Vision</h2>
+                    <p>Ser reconocidos como líderes en el diseño y organización de eventos en Centroamérica, ofreciendo un enfoque innovador, creativo y sostenible que inspire a otras empresas del sector.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Página Catalog -->
+        <div id="page-catalog" class="page">
+            <h1 class="text-3xl font-bold mb-8 text-center">Nuestro Productos</h1>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="products-container">
+                <!-- El contenido de productos se generará dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Página Payment -->
+        <div id="page-payment" class="page">
+            <div class="max-w-2xl mx-auto">
+                <h1 class="text-3xl font-bold mb-8 text-center">Opciones de pago</h1>
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Métodos de pago aceptados</h2>
+                    </div>
+                    <div class="card-content space-y-4">
+                        <div class="flex items-center gap-4">
+                            <img src="img/credit-card.png" alt="Tarjeta de Crédito/Débito" class="w-16 h-10 object-contain">
+                            <span>Tarjeta de Credito/Debito</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="img/paypal.png" alt="PayPal" class="w-16 h-10 object-contain">
+                            <span>PayPal</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="img/arrow.png" alt="banco" class="w-16 h-10 object-contain">
+                            <span>Tranferencia a Cuenta de Banco</span>
+                        </div>
+                        <div class="pt-4 border-t">
+                            <p class="text-sm text-gray-600">Todas las transacciones son seguras y encriptadas. Nunca almacenamos su información de pago.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página Contact -->
+        <div id="page-contact" class="page">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-3xl font-bold mb-8 text-center">Contáctenos</h1>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title">Envíanos un mensaje</h2>
+                        </div>
+                        <div class="card-content">
+                            <form id="contact-form" class="space-y-4">
+                                <div>
+                                    <label for="name" class="block mb-1">Nombre</label>
+                                    <input id="name" name="name" required />
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-1">Email</label>
+                                    <input id="email" name="email" type="email" required />
+                                </div>
+                                <div>
+                                    <label for="message" class="block mb-1">Mensaje</label>
+                                    <textarea id="message" name="message" required rows="5"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-full">
+                                    <span class="icon">✉️</span> Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">Información de contacto</h2>
+                            </div>
+                            <div class="card-content space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <span class="icon">✉️</span>
+                                    <span>info@Imagine&Create.com</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="icon">📞</span>
+                                    <span>+ (503) 123-4567</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <span class="icon">💬</span>
+                                    <span>WhatsApp: +1 (503) 123-4567</span>
+                                </div>
+                                <div class="pt-4 border-t">
+                                    <h3 class="font-medium mb-2">Horario de atención</h3>
+                                    <p>Lunes - Viernes: 9am - 6pm</p>
+                                    <p>Sábado: 10am - 4pm </p>
+                                    <p>Domingo: Cerrado</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h2 class="card-title">Siguenos</h2>
+                            </div>
+                            <div class="card-content">
+                                <div class="flex gap-4">
+                                    <div class="flex items-center gap-2">
+                                        <img src="img/facebook.png" alt="facebook" class="w-16 h-10 object-contain">
+                                        <span>Facebook</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="img/instagram.png" alt="instagram" class="w-16 h-10 object-contain">
+                                        <span>Instagram</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <img src="img/twitter.png" alt="twitter" class="w-16 h-10 object-contain">
+                                        <span>Twitter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página Terms -->
+        <div id="page-terms" class="page">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-3xl font-bold mb-8 text-center">Terminos y Condiciones</h1>
+                <div class="card">
+                    <div class="card-content p-6 space-y-6">
+                        <section>
+                            <h2 class="text-xl font-semibold mb-3">Política de Ventas</h2>
+                            <p>Todas las reservas son definitivas a menos que el servicio no cumpla con lo acordado o presente inconvenientes importantes. En estos casos, contáctenos dentro de los 7 días posteriores al evento para analizar una solución.</p>
+                        </section>
+
+                        <section>
+                            <h2 class="text-xl font-semibold mb-3">Cambios y devoluciones</h2>
+                            <p>Aceptamos cambios o cancelaciones de reservas con un aviso mínimo de 14 días antes del evento. Los servicios personalizados o con materiales específicos no son reembolsables. Los costos iniciales de planificación no serán reembolsados</p>
+                        </section>
+
+                        <section>
+                            <h2 class="text-xl font-semibold mb-3">Cambios en los pedidos</h2>
+                            <p>Las modificaciones al servicio contratado pueden realizarse dentro de las primeras 24 horas posteriores a la solicitud poniéndose en contacto con nuestro equipo. Una vez iniciado el proceso de planificación, los cambios no están garantizados</p>
+                        </section>
+
+                        <section>
+                            <h2 class="text-xl font-semibold mb-3">Política de privacidad</h2>
+                            <p>Recopilamos únicamente la información necesaria para gestionar su evento y garantizar una experiencia inolvidable. Sus datos serán tratados de manera confidencial y nunca se compartirán con terceros sin su consentimiento. </p>
+                        </section>
+
+                        <div class="text-sm text-gray-500 mt-8">
+                            <p>Last updated: June 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">Eventos Creativos. </h2>
+                    <p class="text-gray-400">Diseñando momentos únicos desde 2015</p>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos de servicio</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+            <div class="border-t mt-6 pt-6 text-center text-gray-400">
+                <p>© 2023 Eventos Creativos. odos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
