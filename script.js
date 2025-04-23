@@ -7,9 +7,10 @@ const products = [
 ];
 
 const teamMembers = [
-    { id: 1, name: 'John Doe', role: 'Founder & CEO', contribution: 'Overall design and business strategy' },
-    { id: 2, name: 'Jane Smith', role: 'Design Lead', contribution: 'UI/UX and visual design' },
-    { id: 3, name: 'Mike Johnson', role: 'Developer', contribution: 'Frontend implementation' }
+    { id: 1, name: 'Ramos Alvarado, Hernan Ariel', carnet: 'RA15019', contribucion: 'Diseño de la pagina Payment y Contacto', imageUrl: 'img/RA.JPG' },
+    { id: 2, name: 'Alvarado Alvarado, Sindy Alissette', carnet: 'AA22047', contribucion: 'Diseño de la pagina Terminos y condiciones y Payment', imageUrl: 'img/AA.JPG' },
+    { id: 3, name: 'Aquino Gomez, Jorge Bladimir', carnet: 'AG20006', contribucion: 'Diseño de la pagina Equipo y Quienes somos', imageUrl: 'img/AG.JPG' },
+    { id: 4, name: 'Abrego de la O, Santos Yamleth', carnet: 'AO23007', contribucion: 'Diseño de la pagina inicio y Catalogo y el menu principal', imageUrl: 'img/AO.JPG' }
 ];
 
 // Estado
@@ -51,7 +52,7 @@ function renderProducts() {
                 <p class="text-primary font-bold">${product.price}</p>
             </div>
             <div class="card-content">
-                <img src="${product.imageUrl}" alt="${product.name}" class="w-full h-32 mb-4">
+                <img src="${product.imageUrl}" alt="${product.name}" class="w-full h-48 mb-4">
                 <p>${product.description}</p>
                 <button class="btn btn-primary w-full mt-4">View Details</button>
             </div>
@@ -70,11 +71,11 @@ function renderTeam() {
         memberCard.innerHTML = `
             <div class="card-header">
                 <h2 class="card-title">${member.name}</h2>
-                <p class="text-gray-600">${member.role}</p>
+                <p class="text-gray-600">${member.carnet}</p>
             </div>
             <div class="card-content">
-                <div class="img-placeholder w-16 h-16 mb-4"></div>
-                <p><strong>Contribution:</strong> ${member.contribution}</p>
+                <img src="${member.imageUrl}" alt="${member.name}" class="w-32 h-32 rounded-full object-cover mb-4">
+                <p><strong>Contribucion:</strong> ${member.contribucion}</p>
             </div>
         `;
         container.appendChild(memberCard);
